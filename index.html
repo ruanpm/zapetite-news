@@ -1,0 +1,173 @@
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#343a40">
+    <meta name="keywords" content="Delivery, Comida, Restaurante, App, Comer, Pedir, Tele-entrega">
+    <meta name="author" content="Zapetite App">
+    <meta name="description" content="Notícias sobre novidades gastronômicas.">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="perfil.png">
+    <script src="index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxmXrLYIstY1_DZmWBrbkv4mStQjGhsaw&libraries=geometry,places"></script>
+
+    
+    <title>Zapetite - News - Food delivery</title>
+    <style>
+        .float{
+          position:fixed;
+          width:60px;
+          height:60px;
+          bottom:40px;
+          right:40px;
+          background-color:#25d366;
+          color:#FFF;
+          border-radius:50px;
+          text-align:center;
+          font-size:30px;
+          box-shadow: 2px 2px 3px #999;
+          z-index:100;
+        }
+        .my-float{
+          margin-top:16px;
+        }
+        .my-float:hover {
+            color: white;
+        }
+        .float:hover {
+            color: white;
+        }
+        @media only screen and (max-width: 767px) {
+          .container {
+            width: 300px !important;
+          }
+        }
+        .container {
+            position: relative;
+            width: 960px;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+        mark { 
+          background-color: red;
+          color: white;
+        }
+        body{
+           background-color: #f5f4f9;
+         }
+  
+        .btn  {
+            padding: .550rem .75rem;
+            background-color: #fa2317;
+            border-color: #fa2317;
+          }
+        
+        .btn:hover {
+            background-color: #e30613;
+            border-color: #e30613;
+        }
+        
+        .name{
+                    color: #343a40;
+        }
+        .love{
+                    color: #343a40 !important;
+        }
+        .footer-btn{
+                    text-decoration: none;
+                    color:#343a40;
+        }
+        .footer-btn:hover {
+            color: #e30613;
+            border-color: #e30613;
+        }
+        .footer{
+                    margin-top: 5% !important;
+                    margin-bottom: 10px;
+        }
+        @media (max-width: 479px) {
+                    .footer{
+                    margin-top: 35% !important;
+                    }
+        }
+       </style>
+  </head>
+  <body>
+    <a href="https://api.whatsapp.com/send?phone=554840422277&text=Olá!" class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+    <div class="media mt-5" style="text-align: center !important;display: block;">
+      <img src="logo.png" class="m-3" alt="image">
+    </div>
+    <div class="media-body mt-5" style="text-align: center;">
+      <h3 class="align-items-center mt-2">Zapetite News</h3>
+      <p>Destaques sobre o mercado gastronômico durante a pandemia.</p>
+    </div>
+
+    <div id="content-div" class="container">
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-4 col-sm-4 center full">
+              <div class="colback10">
+                  <img src="mobile.png">
+              </div>
+          </div>
+          <div class="col-md-8 col-sm-8 center full" style="display: table;min-height: 380px; padding-left: 40px;">
+              <div class="cont" style=" text-align: left; ">
+                  <h3 style="font-weight: bold; color: #fa2317;" class="mt-4">VAMOS ONDE VOCÊ ESTIVER</h3>
+                  <p class="pst" style="color: #000000b0;">
+                      Instale o Zapetite App e tenha sempre a mão as melhores opções de refeição, onde quer que você esteja.                </p>
+                  <ul class="list-inline">
+                    <li><a href="https://apps.apple.com/br/app/ZapetiteDelivery/id1537715907#?platform=iphone" class="btn-store btn-appstore">
+                      <img src="appstore.png" style="width: 250px"></img></a></li>
+                    <li style="margin-top: 10px;"><a href="https://play.google.com/store/apps/details?id=com.Zapetite.mobileapp3" class="btn-store btn-googleplay">
+                        <img src="play.png" style="width: 250px"></img></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="page-footer font-small blue-grey lighten-5 footer">
+      <div>
+        <div class="container">
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-8 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">Todos os direitos reservados
+                <a href="https://www.zapetite.com" class="name" target="_blank"> <i class="fa fa-copyright">&nbsp;</i>Zapetite App</a> | 2020</h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-4 text-center text-md-right">
+
+              <!-- Mail -->
+              <a id="email" class="footer-btn" href="mailto:app@zapetite.com">
+                <i class="fa fa-envelope mr-2"></i>
+              </a>
+              <!-- Youtube -->
+              <a class="fb-ic footer-btn" href="https://www.youtube.com/channel/UCFzU3elA4IzmyAbYQ2tp4xA" target="_blank">
+                <i class="fab fa-youtube mr-2"></i>
+              </a>
+              <!-- Facebook -->
+              <a class="fb-ic footer-btn" href="https://www.facebook.com/zapetite" target="_blank">
+                <i class="fab fa-facebook-f mr-2"></i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic footer-btn" href="https://www.instagram.com/zapetite.app/" target="_blank">
+                <i class="fab fa-instagram mr-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
